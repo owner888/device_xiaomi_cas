@@ -11,19 +11,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit from the ArrowOS configuration.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
-# Inherit from the ArrowOS additions
-$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := arrow_cas
+#TARGET_SUPPORTS_QUICK_TAP := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+# Evolution-X things
+EVO_BUILD_TYPE := OFFICIAL
+
+PRODUCT_NAME := evolution_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
 PRODUCT_MANUFACTURER := Xiaomi
 
-DEVICE_MAINTAINER := Xayah
+EVO_MAINTAINER := owner888
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
