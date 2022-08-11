@@ -1,5 +1,7 @@
 # Audio
 audio.deep_buffer.media=true
+audio.offload.buffer.size.kb=32
+audio.offload.gapless.enabled=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
 audio.sys.mute.latency.factor=2

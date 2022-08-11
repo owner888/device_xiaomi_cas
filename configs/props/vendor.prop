@@ -75,8 +75,9 @@ vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.output.suspend.supported=false
 vendor.audio.hw.aac.encoder=true
 vendor.audio.mic.status=off
-vendor.audio.offload.buffer.size.kb=32
-vendor.audio.offload.gapless.enabled=true
+# check not in vendor/build.prop for delete
+# vendor.audio.offload.buffer.size.kb=32
+# vendor.audio.offload.gapless.enabled=true
 vendor.audio.offload.multiaac.enable=true
 vendor.audio.offload.multiple.enabled=false
 vendor.audio.offload.passthrough=false
@@ -153,7 +154,6 @@ ro.hardware.keystore_desede=true
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.enable-aac=true
 media.stagefright.enable-fma2dp=true
 media.stagefright.enable-http=true
@@ -169,10 +169,11 @@ ro.nfc.port=I2C
 ro.netflix.bsp_rev=Q8250-19134-1
 
 # Netmgr
-persist.data.df.dev_name=rmnet_usb0
-persist.data.netmgrd.qos.enable=true
-persist.data.wda.enable=true
-persist.rmnet.data.enable=true
+# check not in vendor/build.prop for delete
+# persist.data.df.dev_name=rmnet_usb0
+# persist.data.netmgrd.qos.enable=true
+# persist.data.wda.enable=true
+# persist.rmnet.data.enable=true
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
